@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 16px;
+  color: white;
+  background: #00171f;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  min-height: 95vh;
+}
+.section {
+  padding-bottom: 2.5rem;
+}
+.header h2 {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 7.5rem;
+  font-family: 'Caveat', sans-serif;
+  background-image: linear-gradient(45deg, #95d5b2, #1b4332);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.parent {
+  height: 350px;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box {
+  height: 200px;
+  width: 200px;
+  background: #ced4da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 2.5px 2.5px 20px 0px rgb(166, 204, 202);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+.box:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.text {
+  color: #007ea7;
+}
+.parent > a {
+  text-decoration: none;
+}
+/*Repeated things*/
+.content {
+  height: 500px;
+  width: 500px;
+  margin: 3rem auto 0rem;
+  text-align: center;
+}
+.content a {
+  text-decoration: none;
+  border: 2px solid #2a9d8f;
+  padding: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 2rem;
+}
+.content a:hover {
+  background: rgb(78, 169, 192);
+  color: rgb(5, 9, 58);
+}
+.content p {
+  margin-top: 4rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.content .form {
+  margin: 3rem auto;
+}
+.content .inputBox {
+  padding: 1rem;
+  outline: none;
+  margin: 1rem 1.5rem;
+  border: 2px solid #7bb99f;
+  background: #00171f;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  height: 2rem;
+  width: 6rem;
+}
+.content .btn {
+  padding: 0.5rem 1rem;
+  display: block;
+  border: 2px solid #2a9d8f;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 2rem;
+  margin: 3rem auto;
+  background: #00171f;
+}
+.content .btn:hover {
+  background: rgb(78, 169, 192);
+  color: rgb(5, 9, 58);
+}
+.content .output {
+  display: none;
+  height: 5rem;
+  width: auto;
+  border: 2px solid #34946c;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 4rem;
+  text-align: center;
+  padding-top: 1.2rem;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  margin-top: 50px;
+  width: 100%;
+  height: 4.5rem;
+  background: #00171f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer li {
+  display: inline;
+  margin: 0 3rem;
+}
+.footer a {
+  color: #7bb99f;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px 10px;
+  font-weight: 600;
+}
+.footer a:hover {
+  color: rgb(15, 48, 20);
+}
+
+/*************************************/
+.formQuiz {
+  text-align: left;
+}
+.formQuiz label.question {
+  display: block;
+}
+.radio input {
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
+  display: inline-block;
+}
+.radio {
+  padding: 0.5rem 0.5rem;
+  white-space: normal;
+}
+.radio label {
+  cursor: pointer;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  display: inline-block;
+}
+.ow {
+  background-color: rgba(153, 153, 168, 0.219);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.error {
+  display: none;
+}
+.label {
+  font-weight: bold;
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background: #00171f;
+  }
+}
