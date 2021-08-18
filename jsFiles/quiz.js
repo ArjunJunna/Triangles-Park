@@ -10,8 +10,8 @@ quizForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const data = new FormData(quizForm);
   let index = 0;
-  for (let entry of data) {
-    if (entry[1] == correctAns[index]) {
+  for (let entry of data.values()) {
+    if (entry === correctAns[index]) {
       queDivs[index].style.backgroundColor = 'green';
       score++;
     } else {
